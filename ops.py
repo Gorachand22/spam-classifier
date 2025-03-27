@@ -4,8 +4,8 @@ from nltk.tokenize import word_tokenize
 from nltk.stem import PorterStemmer
 
 # Download necessary NLTK resources (only needed once)
-# nltk.download('punkt')
-# nltk.download('stopwords')
+nltk.download('punkt')
+nltk.download('stopwords')
 
 
 
