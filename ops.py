@@ -1,12 +1,15 @@
 import nltk
+
+# Ensure necessary NLTK resources are downloaded before usage
+nltk.download('punkt')
+nltk.download('punkt_tab')
+nltk.download('stopwords')
+
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import PorterStemmer
 
 def transform_text(text):
-    # Download necessary NLTK resources
-    nltk.download('punkt')
-    nltk.download('stopwords')
     # Initialize the stemmer
     ps = PorterStemmer()
     stop_words = set(stopwords.words('english'))  # Convert to set for faster lookups
